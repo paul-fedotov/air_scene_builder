@@ -1,12 +1,9 @@
-/**
- * Created by ps_fedotov on 15.12.2017.
- */
-
+import View from './view';
+import Model from './model';
 import "./styles/style.scss";
 
-function app() {
-    let app = document.querySelector('#app');
-    app.innerHTML("Hello, world!");
-}
+let app = document.querySelector("#app");
 
-app();
+const model = new Model();
+const view = new View(app);
+view.setModel(model);

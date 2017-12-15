@@ -1,3 +1,6 @@
-/**
- * Created by ps_fedotov on 15.12.2017.
- */
+
+export default class Model {
+    constructor(){
+        this.data = {};
+    }
+}

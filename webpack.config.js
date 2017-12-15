@@ -6,8 +6,9 @@ let HtmlWebpackPlugin = require('html-webpack-plugin');
 let DashboardPlugin = require('webpack-dashboard/plugin');
 let ExtractTextPlugin = require('extract-text-webpack-plugin');
 
+
 const HOST = process.env.HOST || "127.0.0.1";
-const PORT = process.env.PORT || "7000";
+const PORT = process.env.PORT || "7700";
 
 loaders.push({
     test: /\.scss$/,
@@ -22,6 +23,9 @@ module.exports = {
         publicPath: '/',
         path: path.join(__dirname, 'public'),
         filename: 'bundle.js'
+    },
+    externals: {
+        "pixi.js": "PIXI"
     },
     resolve: {
         extensions: ['.js']
