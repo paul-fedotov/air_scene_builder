@@ -1,0 +1,8 @@
+{
+  "name": "air_scene_builder",
+  "version": "0.0.1",
+  "devDependencies": {
+    "path": "^0.12.7",
+    "webpack": "^3.10.0"
+  }
+}
