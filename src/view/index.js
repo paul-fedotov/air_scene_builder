@@ -1,3 +1,4 @@
+import "pixi.js";
 
 export default class View {
     constructor(app){
@@ -7,7 +8,7 @@ export default class View {
     setCanvas(){
         let {clientHeight, clientWidth} = document.documentElement;
         this.game = new PIXI.Application(clientWidth, clientHeight, {backgroundColor : 0x1099bb});
-        this.app.appendChild(this.game);
+        this.app.appendChild(this.game.view);
     }
 
     setModel(model){

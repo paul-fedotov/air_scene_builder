@@ -7,3 +7,4 @@ let app = document.querySelector("#app");
 const model = new Model();
 const view = new View(app);
 view.setModel(model);
+view.setCanvas();

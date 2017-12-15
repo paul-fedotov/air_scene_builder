@@ -24,9 +24,6 @@ module.exports = {
         path: path.join(__dirname, 'public'),
         filename: 'bundle.js'
     },
-    externals: {
-        "pixi.js": "PIXI"
-    },
     resolve: {
         extensions: ['.js']
     },
