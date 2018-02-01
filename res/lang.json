@@ -1,0 +1,12 @@
+{
+  "version": "1.0",
+  "langs":{
+    "PLACE_YOUR_BETS": ["PLACE YOUR BETS", "ДЕЛАЙТЕ ВАШИ СТАВКИ"],
+    "THERE_ARE_NO_MORE_BETS": ["THERE ARE NO MORE BETS", "СТАВОК БОЛЬШЕ НЕТ"],
+    "WIN": ["WIN"],
+    "maxBet":       ["Maximum bet: ",       "Максимальная ставка: ",  "Apuesta máxima ",         "Maksimum bahis "],
+    "wait_for_bets": ["Wait for bets", "Дождитесь приема ставок"],
+    "overBalance": ["Balance exceeded. Your balance", "Превышение баланса. Ваш баланс"]
+
+  }
+}

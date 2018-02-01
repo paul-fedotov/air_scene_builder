@@ -1,0 +1,82 @@
+{
+  "resourceVersion": "0.0.1",
+  "version": "0.0.1",
+  "name": "mob_roulette2",
+  "size": {
+    "width": 750,
+    "height": 1110
+  },
+  "content": {
+    "scripts": [
+      "index.js"
+    ],
+    "assets": [
+      "res/images/res2/table_big_2.svg",
+      "res/images/res2/table_sm.svg",
+      "res/images/res2/popup_body.svg",
+
+      "res/images/res2/clear_btn_white.svg",
+      "res/images/res2/undo_btn_white.svg",
+      "res/images/res2/repeat_btn_white.svg",
+      "res/images/res2/double_btn_white.svg",
+
+      "res/images/res2/clear_btn_black.svg",
+      "res/images/res2/undo_btn_black.svg",
+      "res/images/res2/repeat_btn_black.svg",
+      "res/images/res2/double_btn_black.svg",
+
+      "res/images/res2/icon_win.svg",
+      "res/images/res2/icon-bet.svg",
+
+      "res/images/res2/win_r.svg",
+      "res/images/res2/win_g.svg",
+      "res/images/res2/win_b.svg",
+
+      "res/images/res2/timeline.svg",
+      "res/images/res2/timeline_y.svg",
+      "res/images/res2/timeline_r.svg",
+
+      "res/images/res2/background.svg",
+
+      "res/images/res2/rectangle-1.svg",
+      "res/images/res2/rectangle-2.svg",
+      "res/images/res2/rectangle-3.svg",
+      "res/images/res2/rectangle-4.svg",
+      "res/images/res2/rectangle-5.svg",
+      "res/images/res2/rectangle-6.svg",
+      "res/images/res2/rectangle-7.svg",
+      "res/images/res2/rectangle-8.svg",
+      "res/images/res2/rectangle-9.svg",
+      "res/images/res2/rectangle-0.svg",
+
+      "res/images/svg/coin.svg",
+      "res/images/svg/euro_roulette.svg",
+      "res/images/svg/exit.svg",
+      "res/images/res2/head.svg",
+      "res/images/svg/refresh.svg",
+      "res/images/svg/sound.svg",
+
+      "res/images/res2/white_normal.svg",
+      "res/images/res2/red_normal.svg",
+      "res/images/res2/blue_normal.svg",
+      "res/images/res2/green_normal.svg",
+      "res/images/res2/black_normal.svg",
+
+      "res/images/res2/history.svg",
+
+      "res/images/svg/disable_screen.svg",
+
+      "res/images/png/block.png"
+    ],
+    "stylesheets": [
+      "res/css/fonts.css",
+      "res/css/disable.css"
+    ],
+    "cssfonts": [
+      "BebusCurrencyRegular",
+      "LatoCurrencyBold",
+      "LatoCurrencyRegular",
+      "BebasNeueRegular"
+    ]
+  }
+}

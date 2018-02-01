@@ -1,0 +1,92 @@
+@media screen and (orientation: landscape){
+    .mod_roulette_disable{
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100vw;
+        display: block;
+        z-index: 999;
+    }
+    html, body {margin: 0; height: 100%; overflow: hidden}
+}
+
+@media screen and (orientation: portrait){
+    .mod_roulette_disable{
+        height: 0;
+        width: 0;
+        z-index: -1;
+    }
+}
+
+.nest-cap{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #000;
+    z-index: 11;
+    color: #fbb03b;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    font-size: 3vw;
+    text-align: center;
+}
+
+.nest-cap svg{
+    width: 20vw;
+    margin-bottom: 1em;
+    animation: cap-rotate 4s infinite linear;
+}
+
+
+@media (orientation: landscape){
+    .nest-cap{
+        display: flex;
+    }
+}
+
+@keyframes cap-rotate{
+    0%{
+        transform: rotate(0deg);
+    }
+    30%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(-90deg);
+    }
+    80%{
+        transform: rotate(-90deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+
+.playground-game{
+    width: 100vw;
+    /*height: 100vh;*/
+    transform: translateY(106px) !important;
+    z-index: 999 !important;
+    position: fixed !important;
+    transition: transform 0.3s ease;
+}
+
+.playground-game-active{
+    transform: translateY(0px) !important;
+    transition: transform 0.3s ease;
+}
+
+.nest-header__logo{
+    height: 80px !important;
+}
+
+/*.error_view{*/
+    /*font-size: 35pt !important;*/
+    /*line-height: 83px !important;*/
+    /*height: 83px !important;*/
+/*}*/

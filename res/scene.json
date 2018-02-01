@@ -1,0 +1,643 @@
+{
+  "version": "2.0.0",
+  "type": "JsonModel.GUI",
+  "scene": "main",
+  "name": "main",
+  "tree": [
+    {
+      "name": "background",
+      "type": "sprite",
+      "texture": "background"
+    },
+    {
+      "type": "sprite",
+      "name": "video",
+      "texture": "block",
+      "position": {"x": 0, "y": 0},
+      "height": 422,
+      "width": 750
+    },
+    {
+      "type": "container",
+      "name": "new_history",
+      "position": {"x": 656, "y": 15},
+      "width": 80,
+      "height": 336,
+      "tree": [
+        {
+          "type": "sprite",
+          "name": "history_img",
+          "texture": "history",
+          "width": 80,
+          "height": 336
+        },
+        {
+          "name": "text_block",
+          "type": "container",
+          "anchor": {"x": 0.5, "y": 0.5},
+          "position": {"x": 8, "y": 8}
+        }
+      ]
+    },
+    {
+      "type": "sprite",
+      "name": "timer",
+      "texture": "timeline_y",
+      "position": {"x": 0, "y": 412},
+      "width": 750,
+      "height": 10
+    },
+    {
+      "type": "container",
+      "name": "bets_info",
+      "position": {"x": 375, "y": 455},
+      "anchor": {"x": 0.5, "y": 0.5},
+      "tree": [
+        {
+          "type": "container",
+          "name": "bets_sum",
+          "visible": false,
+          "anchor": {"x": 0.5, "y": 0.5},
+          "position": {"x": -310, "y": 0},
+          "tree": [
+            {
+              "type": "sprite",
+              "name": "head",
+              "anchor": {"x": 0.5, "y": 0.5},
+              "position": {"x": -20, "y": 10},
+              "width": 37,
+              "height": 36,
+              "texture": "icon-bet",
+              "visible": true
+            },
+            {
+              "name": "sum",
+              "text": "0",
+              "type": "text",
+              "anchor": {"x": 0, "y": 0},
+              "position": {"x": 15, "y": 0},
+              "visible": true,
+              "style": {
+                "fontFamily" : "BebasNeueRegular",
+                "fontSize": 30,
+                "fill" : "0xFFCD27",
+                "align" : "left"
+              }
+            }
+          ]
+        },
+        {
+          "type": "container",
+          "name": "make_bets",
+          "visible": true,
+          "anchor": {"x": 0.5, "y": 0.5},
+          "tree": [
+            {
+              "name": "please",
+              "literal": "PLACE_YOUR_BETS",
+              "type": "text",
+              "anchor": {"x": 0.5, "y": 0},
+              "visible": false,
+              "style": {
+                "fontFamily" : "BebasNeueRegular",
+                "fontSize": 29,
+                "fill" : "0xFFFFFF",
+                "align" : "center"
+              }
+            }
+          ]
+        },
+        {
+          "type": "container",
+          "name": "no_more",
+          "visible": true,
+          "anchor": {"x": 0.5, "y": 0.5},
+          "tree": [
+            {
+              "name": "no_more",
+              "literal": "THERE_ARE_NO_MORE_BETS",
+              "type": "text",
+              "anchor": {"x": 0.5, "y": 0},
+              "visible": false,
+              "style": {
+                "fontFamily" : "BebasNeueRegular",
+                "fontSize": 29,
+                "fill" : "0xFFFFFF",
+                "align" : "center"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "container",
+      "name": "win_ball",
+      "position": {"x": 343, "y": 435},
+      "visible": false,
+      "tree": [
+        {
+          "name": "bg",
+          "type": "sprite",
+          "texture": "win_r",
+          "anchor": {"x": 0.5, "y": 0.5},
+          "position": {"x": 32, "y": 32},
+          "height": 64,
+          "width": 64
+        },
+        {
+          "name": "amount",
+          "anchor": {"x": 0.5, "y": 0.5},
+          "position": {"x": 32, "y": 32},
+          "type": "text",
+          "text": "",
+          "style": {
+            "fontFamily" : "BebasNeueRegular",
+            "fontSize": 48,
+            "fill" : "0xFFFFFF",
+            "align" : "center"
+          }
+        }
+      ]
+    },
+    {
+      "type": "container",
+      "name": "win_sum",
+      "position": {"x": 610, "y": 465},
+      "anchor": {"x": 0.5, "y": 0.5},
+      "visible": false,
+      "tree": [
+        {
+          "type": "sprite",
+          "name": "head",
+          "anchor": {"x": 0.5, "y": 0.5},
+          "position": {"x": 80, "y": 0},
+          "width": 80,
+          "height": 40,
+          "texture": "icon_win",
+          "visible": true
+        },
+        {
+          "type": "container",
+          "name": "text",
+          "tree": [
+            {
+              "name": "amount",
+              "anchor": {"x": 1, "y": 0.5},
+              "position": {"x": 25, "y": 0},
+              "text": "0",
+              "type": "text",
+              "style": {
+                "fontFamily": "BebasNeueRegular",
+                "fontSize": 32,
+                "fill": "0xFFCD27",
+                "align": "right"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "sprite",
+      "name": "table_sm",
+      "texture": "table_sm",
+      "position": {"x": 116, "y": 780},
+      "height": 178,
+      "width": 528
+    },
+    {
+      "type": "sprite",
+      "name": "table_big",
+      "texture": "table_big_2",
+      "position": {"x": 15, "y": 510}
+    },
+    {
+      "type": "container",
+      "position": {"x": 15, "y": 510},
+      "name": "tooltips_big_table",
+      "width": 1440,
+      "height": 480,
+      "scale": {"x": 0.5, "y": 0.5}
+    },
+    {
+      "type": "container",
+      "position": {"x": 15, "y": 510},
+      "name": "tooltips_small_table",
+      "width": 1440,
+      "height": 480,
+      "scale": {"x": 0.5, "y": 0.5}
+    },
+    {
+      "type": "container",
+      "name": "exit_button",
+      "position": {"x": 0, "y": 970},
+      "width": 130,
+      "height": 130,
+      "current_status": "disabled",
+      "tree": [
+        {
+          "type": "sprite",
+          "name": "disabled",
+          "position": {"x": 0, "y": 0},
+          "width": 130,
+          "height": 130,
+          "texture": "clear_btn_black",
+          "visible": true
+        },
+        {
+          "type": "sprite",
+          "name": "normal",
+          "position": {"x": 0, "y": 0},
+          "width": 130,
+          "height": 130,
+          "texture": "clear_btn_white",
+          "visible": false
+        }
+      ]
+    },
+    {
+      "type": "container",
+      "name": "reload_button",
+      "position": {"x": 298, "y": 970},
+      "width": 130,
+      "height": 130,
+      "current_status": "disabled",
+      "tree": [
+        {
+          "type": "sprite",
+          "name": "disabled",
+          "position": {"x": 0, "y": 0},
+          "width": 130,
+          "height": 130,
+          "texture": "repeat_btn_black",
+          "visible": true
+        },
+        {
+          "type": "sprite",
+          "name": "normal",
+          "position": {"x": 0, "y": 0},
+          "width": 130,
+          "height": 130,
+          "texture": "repeat_btn_white",
+          "visible": false
+        }
+      ]
+    },
+    {
+      "type": "container",
+      "name": "refresh_button",
+      "position": {"x": 144, "y": 970},
+      "width": 130,
+      "height": 130,
+      "current_status": "disabled",
+      "tree": [
+        {
+          "type": "sprite",
+          "name": "disabled",
+          "position": {"x": 0, "y": 0},
+          "width": 130,
+          "height": 130,
+          "texture": "undo_btn_black",
+          "visible": true
+        },
+        {
+          "type": "sprite",
+          "name": "normal",
+          "position": {"x": 0, "y": 0},
+          "width": 130,
+          "height": 130,
+          "texture": "undo_btn_white",
+          "visible": false
+        }
+      ]
+    },
+    {
+      "type": "graphics",
+      "name": "black_block",
+      "visible": false,
+      "build": [
+        "beginFill", ["0x000", 0.5],
+        "drawRect", [0,0, 750, 1110],
+        "endFill", null
+      ],
+      "position": {"x": 0, "y": 0}
+    },
+    {
+      "type": "container",
+      "name": "coins_button",
+      "texture": "white_normal",
+      "position": {"x": 628, "y": 970},
+      "height": 104,
+      "width": 104,
+      "current_status": "disabled",
+      "tree": [
+        {
+          "type": "sprite",
+          "name": "coins_button",
+          "texture": "white_normal",
+          "position": {"x": 0, "y": 0},
+          "height": 104,
+          "width": 104,
+          "current_status": "disabled"
+        },
+        {
+          "name": "nominal",
+          "anchor": {"x": 0.5, "y": 0.5},
+          "position": {"x": 52, "y": 52},
+          "text": "0",
+          "type": "text",
+          "style": {
+            "fontFamily" : "BebasNeueRegular",
+            "fontSize": 36,
+            "fill" : "0x000000",
+            "align" : "center"
+          }
+        }
+      ]
+    },
+    {
+      "type": "container",
+      "name": "table_big_tooltip",
+      "position": {"x": 15, "y": 510},
+      "width": 720,
+      "height": 240
+    },
+    {
+      "type": "container",
+      "name": "coins",
+      "position": {"x": 628, "y": 410},
+      "width": 104,
+      "height": 650,
+      "visible": false,
+      "coords": [560, 420, 280, 140, 0],
+      "tree": [
+        {
+          "type": "container",
+          "name": "white",
+          "visible": false,
+          "position": {"x": 0, "y": 560},
+          "screen_y": 560,
+          "tree": [
+            {
+              "type": "sprite",
+              "name": "sprite",
+              "width": 104,
+              "height": 104,
+              "texture": "white_normal"
+            },
+            {
+              "name": "nominal",
+              "anchor": {"x": 0.5, "y": 0.5},
+              "position": {"x": 52, "y": 52},
+              "text": "5",
+              "type": "text",
+              "style": {
+                "fontFamily" : "BebasNeueRegular",
+                "fontSize": 36,
+                "fill" : "0x000000",
+                "align" : "center"
+              }
+            }
+          ]
+        },
+        {
+          "type": "container",
+          "name": "red",
+          "position": {"x": 0, "y": 560},
+          "screen_y": 420,
+          "visible": false,
+          "tree": [
+            {
+              "type": "sprite",
+              "name": "sprite",
+              "width": 104,
+              "height": 104,
+              "texture": "red_normal"
+            },
+            {
+              "name": "nominal",
+              "anchor": {"x": 0.5, "y": 0.5},
+              "position": {"x": 52, "y": 52},
+              "text": "5",
+              "type": "text",
+              "style": {
+                "fontFamily" : "BebasNeueRegular",
+                "fontSize": 36,
+                "fill" : "0x000000",
+                "align" : "center"
+              }
+            }
+          ]
+        },
+        {
+          "type": "container",
+          "name": "blue",
+          "position": {"x": 0, "y": 560},
+          "screen_y": 280,
+          "visible": false,
+          "tree": [
+            {
+              "type": "sprite",
+              "name": "sprite",
+              "width": 104,
+              "height": 104,
+              "texture": "blue_normal"
+            },
+            {
+              "name": "nominal",
+              "anchor": {"x": 0.5, "y": 0.5},
+              "position": {"x": 52, "y": 52},
+              "text": "5",
+              "type": "text",
+              "style": {
+                "fontFamily" : "BebasNeueRegular",
+                "fontSize": 36,
+                "fill" : "0x000000",
+                "align" : "center"
+              }
+            }
+          ]
+        },
+        {
+          "type": "container",
+          "name": "green",
+          "position": {"x": 0, "y": 560},
+          "screen_y": 140,
+          "visible": false,
+          "tree": [
+            {
+              "type": "sprite",
+              "name": "sprite",
+              "width": 104,
+              "height": 104,
+              "texture": "green_normal"
+            },
+            {
+              "name": "nominal",
+              "anchor": {"x": 0.5, "y": 0.5},
+              "position": {"x": 52, "y": 52},
+              "text": "5",
+              "type": "text",
+              "style": {
+                "fontFamily" : "BebasNeueRegular",
+                "fontSize": 36,
+                "fill" : "0x000000",
+                "align" : "center"
+              }
+            }
+          ]
+        },
+        {
+          "type": "container",
+          "name": "black",
+          "position": {"x": 0, "y": 560},
+          "screen_y": 0,
+          "visible": false,
+          "tree": [
+            {
+              "type": "sprite",
+              "name": "sprite",
+              "width": 104,
+              "height": 104,
+              "texture": "black_normal"
+            },
+            {
+              "name": "nominal",
+              "anchor": {"x": 0.5, "y": 0.5},
+              "position": {"x": 52, "y": 52},
+              "text": "5",
+              "type": "text",
+              "style": {
+                "fontFamily" : "BebasNeueRegular",
+                "fontSize": 36,
+                "fill" : "0x000000",
+                "align" : "center"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "table_sm_popup",
+      "type": "container",
+      "position": {"x": 380, "y": 870},
+      "visible": false,
+      "tree": [
+        {
+          "type": "sprite",
+          "name": "body",
+          "texture": "popup_body",
+          "position": {"x": 0, "y": 0},
+          "anchor": {"x": 0.5, "y": 0.5},
+          "height": 64,
+          "width": 320
+        },
+        {
+          "name": "text",
+          "anchor": {"x": 0.5, "y": 0.5},
+          "position": {"x": 0, "y": 0},
+          "literal": "wait_for_bets",
+          "type": "text",
+          "style": {
+            "fontFamily" : "LatoCurrencyRegular",
+            "fontSize": 24,
+            "fill" : "0xffffff",
+            "align" : "center"
+          }
+        }
+      ]
+    },
+    {
+      "name": "table_big_popup",
+      "type": "container",
+      "position": {"x": 380, "y": 620},
+      "visible": false,
+      "tree": [
+        {
+          "type": "sprite",
+          "name": "body",
+          "texture": "popup_body",
+          "position": {"x": 0, "y": 0},
+          "anchor": {"x": 0.5, "y": 0.5},
+          "height": 64,
+          "width": 320
+        },
+        {
+          "name": "text",
+          "anchor": {"x": 0.5, "y": 0.5},
+          "position": {"x": 0, "y": 0},
+          "literal": "wait_for_bets",
+          "type": "text",
+          "style": {
+            "fontFamily" : "LatoCurrencyRegular",
+            "fontSize": 24,
+            "fill" : "0xffffff",
+            "align" : "center"
+          }
+        }
+      ]
+    },
+    {
+      "name": "limits",
+      "type": "container",
+      "position": {"x": 55, "y": 380},
+      "visible": true,
+      "tree": [
+        {
+          "name": "min_text",
+          "anchor": {"x": 0.5, "y": 0.5},
+          "position": {"x": 0, "y": 0},
+          "text": "MIN:",
+          "type": "text",
+          "style": {
+            "fontFamily" : "LatoCurrencyBold",
+            "fontSize": 24,
+            "fill" : "0xFFCD27",
+            "align" : "center"
+          }
+        },
+        {
+          "name": "min_count",
+          "anchor": {"x": 0, "y": 0.5},
+          "position": {"x": 35, "y": 0},
+          "text": "1",
+          "type": "text",
+          "style": {
+            "fontFamily" : "LatoCurrencyBold",
+            "fontSize": 24,
+            "fill" : "0xFFCD27",
+            "align" : "center"
+          }
+        },
+        {
+          "name": "max_text",
+          "anchor": {"x": 0.5, "y": 0.5},
+          "position": {"x": 120, "y": 0},
+          "text": "MAX:",
+          "type": "text",
+          "style": {
+            "fontFamily" : "LatoCurrencyBold",
+            "fontSize": 24,
+            "fill" : "0xFFCD27",
+            "align" : "center"
+          }
+        },
+        {
+          "name": "max_count",
+          "anchor": {"x": 0, "y": 0.5},
+          "position": {"x": 165, "y": 0},
+          "text": "10,000",
+          "type": "text",
+          "style": {
+            "fontFamily" : "LatoCurrencyBold",
+            "fontSize": 24,
+            "fill" : "0xFFCD27",
+            "align" : "center"
+          }
+        }
+      ]
+    }
+  ]
+}

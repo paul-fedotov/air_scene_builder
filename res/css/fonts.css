@@ -1,0 +1,28 @@
+@font-face {
+    font-family: 'BebusCurrencyRegular';
+    font-weight: normal;
+    font-style: normal;
+    src: url('../fonts/Bebus_Currency-Regular.otf') format("opentype");
+}
+
+@font-face {
+    font-family: 'LatoCurrencyBold';
+    font-weight: normal;
+    font-style: normal;
+    src: url('../fonts/Lato-Currency-Bold.otf') format("opentype");
+}
+
+@font-face {
+    font-family: 'LatoCurrencyRegular';
+    font-weight: normal;
+    font-style: normal;
+    src: url('../fonts/Lato-Currency-Regular.otf') format("opentype");
+}
+@font-face {
+    font-family: 'BebasNeueRegular';
+    font-weight: normal;
+    font-style: normal;
+    src: url('../fonts/BebasNeueRegular.eot');
+    src: url('../fonts/BebasNeueRegular.ttf') format("truetype"),
+    url('../fonts/BebasNeueRegular.woff') format("woff");
+}

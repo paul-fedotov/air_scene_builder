@@ -1,0 +1,19 @@
+<svg width="104" height="104" viewBox="0 0 104 104" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>body</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="matrix(2 0 0 2 -2640 -980)">
+<g id="body">
+<use xlink:href="#path0_fill" transform="translate(1320 490)" fill="#F2F2F2"/>
+<mask id="mask0_outline_ins">
+<use xlink:href="#path0_fill" fill="white" transform="translate(1320 490)"/>
+</mask>
+<g mask="url(#mask0_outline_ins)">
+<use xlink:href="#path1_stroke_2x" transform="translate(1320 490)" fill="#C62308"/>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 26 52C 40.3594 52 52 40.3594 52 26C 52 11.6406 40.3594 0 26 0C 11.6406 0 0 11.6406 0 26C 0 40.3594 11.6406 52 26 52Z"/>
+<path id="path1_stroke_2x" d="M 26 58C 43.6731 58 58 43.6731 58 26L 46 26C 46 37.0457 37.0457 46 26 46L 26 58ZM 58 26C 58 8.32689 43.6731 -6 26 -6L 26 6C 37.0457 6 46 14.9543 46 26L 58 26ZM 26 -6C 8.32689 -6 -6 8.32689 -6 26L 6 26C 6 14.9543 14.9543 6 26 6L 26 -6ZM -6 26C -6 43.6731 8.32689 58 26 58L 26 46C 14.9543 46 6 37.0457 6 26L -6 26Z"/>
+</defs>
+</svg>

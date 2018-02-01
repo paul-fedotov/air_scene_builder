@@ -1,0 +1,19 @@
+<svg width="40" height="168" viewBox="0 0 40 168" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>Rectangle 13</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-831 -72)">
+<g id="Rectangle 13">
+<use xlink:href="#path0_fill" transform="translate(831 72)"/>
+<mask id="mask0_outline_ins">
+<use xlink:href="#path0_fill" fill="white" transform="translate(831 72)"/>
+</mask>
+<g mask="url(#mask0_outline_ins)">
+<use xlink:href="#path1_stroke_2x" transform="translate(831 72)" fill="#3A3939"/>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" fill-rule="evenodd" d="M 0 4C 0 1.79087 1.79086 0 4 0L 36 0C 38.2091 0 40 1.79086 40 4L 40 164C 40 166.209 38.2091 168 36 168L 4 168C 1.79086 168 0 166.209 0 164L 0 4Z"/>
+<path id="path1_stroke_2x" d="M 4 2L 36 2L 36 -2L 4 -2L 4 2ZM 38 4L 38 164L 42 164L 42 4L 38 4ZM 36 166L 4 166L 4 170L 36 170L 36 166ZM 2 164L 2 4L -2 4L -2 164L 2 164ZM 4 166C 2.89543 166 2 165.105 2 164L -2 164C -2 167.314 0.686293 170 4 170L 4 166ZM 38 164C 38 165.105 37.1046 166 36 166L 36 170C 39.3137 170 42 167.314 42 164L 38 164ZM 36 2C 37.1046 2 38 2.89543 38 4L 42 4C 42 0.686291 39.3137 -2 36 -2L 36 2ZM 4 -2C 0.686288 -2 -2 0.686299 -2 4L 2 4C 2 2.89543 2.89543 2 4 2L 4 -2Z"/>
+</defs>
+</svg>
