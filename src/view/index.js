@@ -1,20 +1,37 @@
 import "pixi.js";
+import Element from "./element";
+
+const scene = {
+    x: 0,
+    y: 0,
+    height: 667,
+    width: 375
+};
 
 export default class View {
-    constructor(app, res){
-        this.app = app;
+    constructor(element, res){
+        this.element = element;
         this.res = res;
     }
 
     setCanvas(){
         let {clientHeight, clientWidth} = document.documentElement;
-        this.game = new PIXI.Application(1536, 864, {backgroundColor : 0x1099bb});
-        this.app.appendChild(this.game.view);
+        this.app = new PIXI.Application(1920, 864, {backgroundColor : 0x1099bb});
+        this.element.appendChild(this.app.view);
         this.res.forEach((res, i) => {
-            let sp = new PIXI.Sprite.fromImage(res);
-            sp.position = {x: i * 10, y: i * 10};
-            this.game.stage.addChild(sp);
+            let e = new Element(res, i);
+            this.app.stage.addChild(e.sprite);
         });
+
+        this.scene = new PIXI.Container();
+        this.scene.position = {x: scene.x, y: scene.y};
+        this.scene.width = scene.width;
+        this.scene.height = scene.height;
+        let bg = new PIXI.Graphics();
+        bg.beginFill(0x000000, 1);
+        bg.drawRect(scene.x, scene.y, scene.width, scene.height);
+        this.app.stage.addChild(bg);
+        this.app.stage.addChild(this.scene)
     }
 
     setModel(model){

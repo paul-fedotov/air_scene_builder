@@ -3,10 +3,10 @@ import Model from './model';
 import "./styles/style.scss";
 import {content} from "../res.json";
 
-const app = document.querySelector("#app");
+const element = document.querySelector("#app");
 const res = content.assets;
 
 const model = new Model();
-const view = new View(app, res);
+const view = new View(element, res);
 view.setModel(model);
 view.setCanvas();
