@@ -3,6 +3,8 @@ import "pixi.js";
 export default class Element {
     constructor(res, i, fn){
         let sp = new PIXI.Sprite.fromImage(res);
+        sp.interactive = true;
+        sp.buttonMode = true;
         sp.texture.baseTexture.on('loaded', () =>{
             let {width, height} = sp;
             let k = width / 100;
@@ -10,16 +12,15 @@ export default class Element {
             sp.width = width / k;
             sp.height = height / k;
         });
-        sp.interactive = true;
         this.index = i;
         this.res = res;
         this.sprite = sp;
         this.fn = fn;
 
-        this.onTouchStart = this.onTouchStart.bind(this);
-        this.onTouchMove = this.onTouchMove.bind(this);
-        this.onTouchEnd = this.onTouchEnd.bind(this);
-        this.onTouchEndOutside = this.onTouchEndOutside.bind(this);
+        // this.onTouchStart = this.onTouchStart.bind(this);
+        // this.onTouchMove = this.onTouchMove.bind(this);
+        // this.onTouchEnd = this.onTouchEnd.bind(this);
+        // this.onTouchEndOutside = this.onTouchEndOutside.bind(this);
 
         this.addEvents();
     }

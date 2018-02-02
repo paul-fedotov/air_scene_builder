@@ -2,10 +2,10 @@ import "pixi.js";
 import Element from "./element";
 
 const scene = {
-    x: 0,
-    y: 0,
-    height: 667,
-    width: 375
+    x: 500,
+    y: 200,
+    height: 1110,
+    width: 750
 };
 
 export default class View {
@@ -31,13 +31,21 @@ export default class View {
         });
         this.app.stage.interactiveChildren = true;
         this.app.stage.interactive = true;
+
         this.scene = new PIXI.Container();
         this.scene.position = {x: scene.x, y: scene.y};
         this.scene.width = scene.width;
         this.scene.height = scene.height;
+        this.scene.scale = {x: 0.5, y: 0.5};
         let bg = new PIXI.Graphics();
         bg.beginFill(0x000000, 1);
-        bg.drawRect(scene.x, scene.y, scene.width, scene.height);
+        bg.drawRect(
+            scene.x,
+            scene.y,
+            scene.width,
+            scene.height
+        );
+        bg.scale = {x: 0.5, y: 0.5};
         this.app.stage.addChild(bg);
         this.app.stage.addChild(this.scene);
 
