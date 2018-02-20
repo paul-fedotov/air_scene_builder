@@ -32,10 +32,6 @@ export default class View {
         //TODO: Remove element from scree
     }
 
-    exportJSON(){
-        //TODO: Export JSON with scene
-    }
-
     setCanvas(){
         let {clientHeight, clientWidth} = document.documentElement;
         this.app = new PIXI.Application(1536, 864, {backgroundColor : 0x1099bb});
