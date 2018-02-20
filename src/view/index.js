@@ -15,7 +15,8 @@ export default class View {
         this.fn = {
             addElement: this.addElement.bind(this),
             stopPropagation: this.stopPropagationAllElements.bind(this)
-        }
+        };
+        //TODO: Stack of elements on screen
     }
 
     stopPropagationAllElements(){
@@ -24,6 +25,15 @@ export default class View {
 
     addElement(res){
         console.log(res);
+        //TODO: Add element at center screen
+    }
+
+    removeElement(element){
+        //TODO: Remove element from scree
+    }
+
+    exportJSON(){
+        //TODO: Export JSON with scene
     }
 
     setCanvas(){
