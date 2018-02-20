@@ -13,12 +13,17 @@ export default class View {
         this.element = element;
         this.res = res;
         this.fn = {
+            addElement: this.addElement.bind(this),
             stopPropagation: this.stopPropagationAllElements.bind(this)
         }
     }
 
     stopPropagationAllElements(){
         alert("work");
+    }
+
+    addElement(res){
+        console.log(res);
     }
 
     setCanvas(){
@@ -48,7 +53,6 @@ export default class View {
         bg.scale = {x: 0.5, y: 0.5};
         this.app.stage.addChild(bg);
         this.app.stage.addChild(this.scene);
-
     }
 
     setModel(model){

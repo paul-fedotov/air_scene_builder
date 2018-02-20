@@ -17,40 +17,21 @@ export default class Element {
         this.sprite = sp;
         this.fn = fn;
 
-        // this.onTouchStart = this.onTouchStart.bind(this);
-        // this.onTouchMove = this.onTouchMove.bind(this);
-        // this.onTouchEnd = this.onTouchEnd.bind(this);
-        // this.onTouchEndOutside = this.onTouchEndOutside.bind(this);
+        this.onClick = this.onClick.bind(this);
 
         this.addEvents();
     }
 
     addEvents(){
-        this.sprite.on("touchstart", this.onTouchStart);
-        this.sprite.on("touchmove", this.onTouchMove);
-        this.sprite.on("touchend", this.onTouchEnd);
+        this.sprite.on("pointerdown", this.onClick);
     }
 
     removeEvents(){
-
+        this.sprite.off("pointerdowm", this.onClick);
     }
 
-    onTouchStart(e){
-        this.data = e.data;
-        this.dragging = true;
-        console.log('aaa');
-        // this.fn.stopPropagation();
+    onClick(e){
+        this.fn.addElement(this.res);
     }
 
-    onTouchMove(e){
-        console.log('aaa');
-    }
-
-    onTouchEnd(e){
-        console.log('aaa');
-    }
-
-    onTouchEndOutside(e){
-
-    }
 }
